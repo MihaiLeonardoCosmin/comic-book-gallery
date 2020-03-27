@@ -3,7 +3,7 @@
     var seriesTitle = "The Amazing Spider-Man";
     var issuNumber = 700;
     var description = "<p> Spider-Man este un licen care a fost muscat de un <span>paianjen la scoala </span></p>";
-    var artist = new string[]
+    var artists = new string[]
     {
         "Scripts:Dan Slot",
         "Penciles:Humberto Ramos",
@@ -22,14 +22,26 @@
 </head>
 <body>
     <div>
-        <h1>@seriesTitle </h1>    
+        <h1>@seriesTitle </h1>
         <h2>Issu #@issuNumber</h2>
 
         <h5>Description:</h5>
         <div>@Html.Raw(@description)</div>
 
-        <h5>Artist:</h5>
-        <div>@artist</div>
+        @if (artists.Length > 0)
+        {
+            <h5>Artist:</h5>
+            <div>
+                <ul>
+                    @foreach (var artist in artists)
+                    {
+                        <li>@artist</li>
+                    }
+                </ul>
+            </div>
+        }
+
+
     </div>
 </body>
 </html>
