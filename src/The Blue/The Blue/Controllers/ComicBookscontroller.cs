@@ -8,5 +8,9 @@ namespace The_Blue.Controllers
 {
     public class ComicBookscontroller : Controller
     {
+        public string  Detail()
+        {
+            return "Hello from the comic books controller!";
+        }
     }
 }
