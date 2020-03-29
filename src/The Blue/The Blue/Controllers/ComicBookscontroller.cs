@@ -15,16 +15,17 @@ namespace The_Blue.Controllers
             {
                 SeriesTitle = "The Amazing Spider-Man",
                 IssueNumber = 700,
-                DescriptionHtml = "<p> Spider-Man este un licen care a fost muscat de un <span>paianjen la scoala </span></p>",
+                DescriptionHtml = "<p>Final issue! Witness the final hours of Doctor Octopus' life and his one, last, great act of revenge! Even if Spider-Man survives...<strong>will Peter Parker?</strong></p>",
                 Artists = new Artist[]
-                {
-                    new Artist() {Name = "Dan Slot" , Role = "Scripts"},
-                    new Artist() {Name = "Humberto Ramos" , Role = "Penciles"},
-                    new Artist() {Name = "Victor Olazaba" , Role = "Inks"},
-                    new Artist() {Name = "Edgar Delgado" , Role = "Colors"},
-                    new Artist() {Name = "Chris Eliopoulos" , Role = "Letters"},
-                }
-            };
+                    {
+                        new Artist() { Name = "Dan Slott", Role = "Script" },
+                        new Artist() { Name = "Humberto Ramos", Role = "Pencils" },
+                        new Artist() { Name = "Victor Olazaba", Role = "Inks" },
+                        new Artist() { Name = "Edgar Delgado", Role = "Colors" },
+                        new Artist() { Name = "Chris Eliopoulos", Role = "Letters" },
+                    },
+                Favorite = false
+        };
             
             return View(comicBook);
         }
